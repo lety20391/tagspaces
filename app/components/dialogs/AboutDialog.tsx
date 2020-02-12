@@ -25,7 +25,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import withMobileDialog from '@material-ui/core/withMobileDialog';
 import Dialog from '@material-ui/core/Dialog';
 import semver from 'semver';
-import LogoIcon from '-/assets/images/icon100x100.svg';
+import LogoIcon from '-/assets/images/pegadent.svg';
 import i18n from '-/services/i18n';
 import versionMeta from '-/version.json';
 import { Pro } from '-/pro';
@@ -130,10 +130,11 @@ const AboutDialog = (props: Props) => {
         <br />
         <Typography id="aboutContent" variant="body1">
           <strong>
-            {productName}
+            Pegadent
             &nbsp;
           </strong>
-          is made possible by the TagSpaces(github.com/tagspaces) open source
+          version is modified with love from Tagspaces by Đạt Lé
+          TagSpaces is made possible by the TagSpaces(github.com/tagspaces) open source
           project and other
           <Button
             size="small"
