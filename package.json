@@ -48,7 +48,7 @@
     "package-android": "yarn build-cordova && cd cordova && yarn install && cordova build --release android && cd ../.. && ./prepare-android.sh",
     "package-web": "yarn prepare-web && yarn clean-maps && zip -r ../builds/tagspaces-web.zip web -x web/files/**\\*",
     "package-web-pro": "yarn prepare-web && yarn clean-maps && zip -r ../builds/tagspaces-pro-web.zip web -xi web/files/**\\* ",
-    "prepare-web": "rimraf web/node_modules && cp -r app/node_modules web && cp LICENSE.txt web && node scripts/genswconf.js",
+    "prepare-web": "rimraf web/node_modules && copy app/node_modules web && copy LICENSE.txt web && node scripts/genswconf.js",
     "prepare-cordova": "rimraf cordova/www/dist && rimraf cordova/www/node_modules && cp -Lr app/node_modules cordova/www && cp LICENSE.txt cordova/www",
     "clean": "rimraf node_modules && rimraf app/dist",
     "clean-pro": "yarn clean-maps",
@@ -229,7 +229,7 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2",
-    "yarn": "^1.21.1"
+    "yarn": "^1.22.0"
   },
   "dependencies": {
     "@date-io/date-fns": "^1.3.9",
