@@ -23,7 +23,7 @@ import IconButton from '@material-ui/core/IconButton';
 import { withStyles } from '@material-ui/core/styles';
 import Badge from '@material-ui/core/Badge';
 import { Pro } from '../pro';
-import TextLogoIcon from '../assets/images/pegadent.svg';
+import TextLogoIcon from '../assets/images/text-logo.svg';
 import { actions as AppActions } from '../reducers/app';
 import versionMeta from '../version.json';
 
