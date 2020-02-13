@@ -90,3 +90,4 @@ builds/*
 web/sw-config.js
 
 coverage
+yarn.lock
